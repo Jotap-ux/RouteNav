@@ -23,6 +23,14 @@ const routes: Routes = [
     canActivate: [AuthenGuardService]
     
   },
+  {
+    path: 'informacion',
+    loadChildren: () => import('./pages/informacion/informacion.module').then( m => m.InformacionPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/p404/p404.module').then( m => m.P404PageModule)
+  },
 ];
 
 @NgModule({

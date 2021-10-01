@@ -5,5 +5,19 @@
 </ion-header>
 
 <ion-content>
+  <ion-list lines="full">
+
+    <ion-item>
+      <ion-label>Usuario: </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Contraseña: </ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="loginUser()">Login</ion-button>
+  </ion-list>
 
 </ion-content>
